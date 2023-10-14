@@ -1,0 +1,27 @@
+<table mat-table [dataSource]="data" class="mat-elevation-z8">
+  
+    <ng-container matColumnDef="shortenedUrl">
+      <th mat-header-cell *matHeaderCellDef> Short </th>
+      <td mat-cell *matCellDef="let element">
+        <app-external-link (click)="onShortenedUrlClick()" [url]="element.shortenedUrl"></app-external-link>
+      </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="completeUrl">
+      <th mat-header-cell *matHeaderCellDef> Complete </th>
+      <td mat-cell *matCellDef="let element"> {{element.completeUrl}} </td>
+    </ng-container>
+  
+    <ng-container matColumnDef="clickCount">
+      <th mat-header-cell *matHeaderCellDef> Nb. click </th>
+      <td mat-cell *matCellDef="let element"> {{element.clickCount}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="delete">
+      <th mat-header-cell *matHeaderCellDef> Delete </th>
+      <td mat-cell *matCellDef="let element"><mat-icon (click)="onDelete(element)">delete_outline</mat-icon> </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
