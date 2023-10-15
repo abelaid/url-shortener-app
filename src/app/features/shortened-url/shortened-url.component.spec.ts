@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ShortenedUrlComponent } from './shortened-url.component';
+import { AppTestingModule } from 'src/test/app-testing.module';
+import { ShortenedUrlModule } from './shortened-url.module';
 
 describe('ShortenedUrlComponent', () => {
   let component: ShortenedUrlComponent;
@@ -8,7 +10,7 @@ describe('ShortenedUrlComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ShortenedUrlComponent]
+      imports: [AppTestingModule, ShortenedUrlModule]
     });
     fixture = TestBed.createComponent(ShortenedUrlComponent);
     component = fixture.componentInstance;

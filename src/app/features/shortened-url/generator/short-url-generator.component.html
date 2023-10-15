@@ -2,7 +2,8 @@
     <mat-form-field class="generator-full-width">
       <mat-label>Url</mat-label>
       <input matInput [formControl]="urlFormControl" [errorStateMatcher]="matcher"
-             placeholder="Ex. http://www.lemonde.fr">
+        id="urlInput"
+        placeholder="Ex. http://www.lemonde.fr">
       <mat-hint>Submit an url to shorten</mat-hint>
       <mat-error *ngIf="urlFormControl.hasError('pattern') && !urlFormControl.hasError('required')">
         Please enter a valid url
@@ -10,7 +11,7 @@
       <mat-error *ngIf="urlFormControl.hasError('required')">
         Url is <strong>required</strong>
       </mat-error>
-      <button mat-raised-button matSuffix color="primary" (click)="onSubmit()">Submit</button>  
+      <button mat-raised-button matSuffix color="primary" (click)="onSubmit()" id="submitBtn">Submit</button>  
     </mat-form-field>
     
   </form>

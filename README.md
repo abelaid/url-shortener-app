@@ -18,6 +18,10 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
+> :warning: See [ShortUrlGeneratorComponentSpec](./src/app/features/shortened-url/generator/short-url-generator.component.spec.ts) for component testing example
+
+> :warning: See [ShortenUrlServiceService](./src/app/features/shortened-url/services/shorten-url-service.service.spec.ts) for service testing example
+
 ## Running end-to-end tests
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.

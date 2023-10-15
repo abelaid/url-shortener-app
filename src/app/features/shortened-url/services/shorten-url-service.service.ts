@@ -4,7 +4,7 @@ import { BehaviorSubject, Observable, tap } from 'rxjs';
 import { ShortenedUrlResponse } from '../model/shortened-url-response';
 import { ShortenedUrl } from '../model/shortened-url';
 
-const API_HOST = 'http://localhost:8080';
+export const API_HOST = 'http://localhost:8080';
 
 @Injectable({
   providedIn: 'root'

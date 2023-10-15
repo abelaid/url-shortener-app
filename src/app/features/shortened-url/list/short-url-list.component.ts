@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
 import { ShortenUrlServiceService } from '../services/shorten-url-service.service';
 import { ShortenedUrl } from '../model/shortened-url';
-import { ShortenedUrlResponse } from '../model/shortened-url-response';
 
 @Component({
   selector: 'app-short-url-list',
-  templateUrl: './short-url-list.component.html',
-  styleUrls: ['./short-url-list.component.scss']
+  templateUrl: './short-url-list.component.html'
 })
 export class ShortUrlListComponent {
 
