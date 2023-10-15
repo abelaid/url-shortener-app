@@ -18,9 +18,13 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-> :warning: See [ShortUrlGeneratorComponentSpec](./src/app/features/shortened-url/generator/short-url-generator.component.spec.ts) for component testing example
+> :warning: For component testing example see
 
-> :warning: See [ShortenUrlServiceService](./src/app/features/shortened-url/services/shorten-url-service.service.spec.ts) for service testing example
+[ShortUrlGeneratorComponentSpec](src/app/features/shortened-url/generator/short-url-generator.component.spec.ts)
+
+> :warning: For service testing example see
+
+[ShortenUrlServiceService](src/app/features/shortened-url/services/shorten-url-service.service.spec.ts)
 
 ## Running end-to-end tests
 
